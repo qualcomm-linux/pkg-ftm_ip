@@ -1,4 +1,4 @@
-Source: ftmip
+Source: ftmdaemon-ip
 Section: utils
 Priority: optional
 Maintainer: Jing Feng <jinfen@qti.qualcomm.com>
@@ -10,7 +10,7 @@ Build-Depends:
 Standards-Version: 4.6.2
 Rules-Requires-Root: no
 
-Package: ftmip
+Package: ftmdaemon-ip
 Architecture: arm64
 Description: Qualcomm proprietary ftm-ip WLAN component
  Proprietary prebuilt binary package for ftm.
