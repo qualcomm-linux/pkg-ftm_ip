@@ -1,4 +1,35 @@
-#!/usr/bin/make -f
+#!/usr/bin/make -rRf
+
+export DH_VERBOSE=1
 
 %:
 	dh $@
+
+override_dh_auto_configure:
+	:
+
+override_dh_auto_build:
+	:
+
+override_dh_auto_clean:
+	:
+
+override_dh_auto_install:
+	# -------- wlanftm --------
+	mkdir -p debian/wlanftmdaemon-ip/usr/bin
+	cp -a data/ftmdaemon-ip/arm64/usr/bin/* debian/wlanftmdaemon-ip/usr/bin/
+
+override_dh_install:
+	:
+
+override_dh_strip:
+	:
+
+override_dh_dwz:
+	:
+
+override_dh_shlibdeps:
+	:
+
+override_dh_fixperms:
+	:
