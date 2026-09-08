@@ -1,19 +1,16 @@
-Source: template
-Section: libs
+Source: ftm_ip
+Section: utils
 Priority: optional
-Maintainer: Simon Beaudoin <sbeaudoi@qti.qualcomm.com>
-Build-Depends: debhelper (>= 13)
+Maintainer: Jing Feng <jinfen@qti.qualcomm.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ libglib2.0-dev,
+ libnl-3-dev,
+ libnl-genl-3-dev
 Standards-Version: 4.6.2
+Rules-Requires-Root: no
 
-Package: template1
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Template package
- This is an example package to demonstrate the Qualcomm OSS development flow
-
-Package: template-dev
-Section: libdevel
-Architecture: any
-Depends: template1 (= ${binary:Version}), ${misc:Depends}
-Description: Template package dev
- This is an example package to demonstrate the Qualcomm OSS development flow
+Package: ftm_ip
+Architecture: arm64
+Description: Qualcomm proprietary ftm-ip WLAN component
+ Proprietary prebuilt binary package for ftm.
