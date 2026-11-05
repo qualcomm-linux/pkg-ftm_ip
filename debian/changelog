@@ -1,4 +1,4 @@
-ftmdaemon-ip (1.0.2-1) UNRELEASED; urgency=medium
+ftmdaemon-ip (1.0.2-2) UNRELEASED; urgency=medium
 
   * Update upstream source to 260630.1/prebuilt_noble/ftmdaemon-ip_1.0.2_arm64.tar.gz
 
