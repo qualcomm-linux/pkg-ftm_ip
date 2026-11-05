@@ -1,3 +1,9 @@
+ftmdaemon-ip (1.0.2-3~) UNRELEASED; urgency=medium
+
+  * WIP — update changelog before next release
+
+ -- Jing Feng <jinfen@qti.qualcomm.com>  Thu, 05 Nov 2026 08:39:19 +0000
+
 ftmdaemon-ip (1.0.2-2) resolute; urgency=medium
 
   [ Jing Feng ]
