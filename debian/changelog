@@ -1,8 +1,25 @@
 ftmdaemon-ip (1.0.2-3~) UNRELEASED; urgency=medium
 
-  * WIP — update changelog before next release
+  [ Keerthi Gowda ]
+  * debian/control: switch to Build-Depends-Arch for arm64-specific
+      libraries, drop Priority/Rules-Requires-Root, bump
+      Standards-Version to 4.7.4, set Section to non-free/utils, add
+      Vcs-Browser/Vcs-Git, and switch to ${shlibs:Depends}/${misc:Depends}
+  * debian/rules: restore the executable bit, fix shebang, and simplify
+      to a single override_dh_auto_install and override_dh_dwz, letting
+      dh_strip/dh_shlibdeps/dh_fixperms run with default debhelper
+      behaviour so the declared Depends match the binary's actual
+      libnl-3/libnl-genl-3 runtime dependency
+  * debian/source/options: add extend-diff-ignore for .github and
+      .gitignore
+  * debian/gbp.conf: add gbp-buildpackage configuration
+  * debian/source/lintian-overrides: add overrides for prebuilt-binary
+      source package
+  * debian/template1.install, debian/template-dev.install: remove unused
+      template files
+  * .gitignore: add root .gitignore for build artifacts
 
- -- Jing Feng <jinfen@qti.qualcomm.com>  Thu, 05 Nov 2026 08:39:19 +0000
+ -- Keerthi Gowda <kbalehal@qti.qualcomm.com>  Thu, 12 Nov 2026 21:30:00 +0000
 
 ftmdaemon-ip (1.0.2-2) resolute; urgency=medium
 
